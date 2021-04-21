@@ -1,0 +1,84 @@
+
+.pizarra{
+    /*background-color:red;*/
+    display:flex;
+    justify-content: center;
+    position: relative;
+    padding: 2px;
+}
+
+ul,li{
+  list-style:none;
+}
+ul{
+  display: flex !important;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  overflow:hidden;
+  margin: auto;
+  padding: 10px 0;
+}
+
+li {
+    position: relative;
+    margin:2em;
+}
+
+ul li a{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:12em;
+  width:12em;
+  padding:1em;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+}
+
+ul li h2{
+  font-size:140%;
+  font-weight:bold;
+  padding-bottom:10px;
+}
+ul li p{
+  font-family:"Reenie Beanie",arial,sans-serif;
+  font-size:100%;
+}
+
+ul li a:hover,ul li a:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+
+@media (min-width:  576px) and (max-width:992px) { /*tablets y pantallas pequeñas*/
+  
+  ul li a{
+    
+    height:10em;
+    width:10em;
+  }
+
+}
+
+@media (max-width: 575px)/* and (max-width:992px) */{ /*celulares*/
+
+  ul{
+    
+  }
+
+  li{
+    
+  }
+
+}

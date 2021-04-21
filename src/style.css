@@ -1,0 +1,150 @@
+* {
+
+    font-family: 'Nunito', sans-serif;
+    color: #212529;
+    overflow-wrap: break-word;
+}
+
+:root {
+
+    --c1: #292E49;
+    --c2: #536976;
+    --c3: #BBD2C5;
+    --blanco: #f8f9fa;
+    --negro: #343a40;
+    --plateado: #e3e4e5;
+}
+  
+::-webkit-scrollbar {
+
+    display: none;
+}
+
+body {
+    
+    background: #BBD2C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top , #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+}
+
+.viewPdf {
+            
+    width: 100%;
+    height: 100vh;
+}
+  
+#sep-title{
+    background-color: var(--negro);
+    color: var(--blanco);
+    width: 60%;
+    vertical-align: middle;
+    border: 1px;
+    padding: 5px 16px;
+    font-size: 26px;
+    line-height: 1.5;
+    border-radius: .25rem;
+    margin: 1px auto;
+}
+
+.navbar-brand{
+    white-space: nowrap;
+    height: auto;
+    padding: 10px 0;
+}
+
+.avatar {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.avatar-img {
+
+    border-radius: 50%;
+    width: 20%;
+    height: auto;
+    border: 1px solid grey;
+}
+
+#description{
+    width: 50%; 
+    margin: auto;
+    border-radius: 15px;
+}
+
+#card-container {
+
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 10px ;
+    margin: auto;
+}
+
+.card, .card-body{
+    height: auto;
+}
+
+.skill-card{
+    margin: .5rem!important;
+    padding: .25rem!important;
+    text-align: center!important;
+}
+
+.skill-img {
+
+    border-radius: 50%;
+    width: 50%;
+    height: auto;
+    border: 1px solid grey;
+}
+
+.skill-p{
+    color: var(--blanco);
+    padding: 0;
+    margin: 0;
+}
+
+#social-media {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width:  576px) and (max-width:992px) {
+  
+    .avatar-img {   width: 30%;    }
+    #card-container{  grid-template-columns: 1fr 1fr }
+  
+}
+
+@media (max-width: 575px)/* and (max-width:992px) */{
+  
+    .navbar-brand{  margin: 0;  white-space: normal; padding: 0; }
+    .avatar-img {   width: 30%;    }
+    #description{   width: 80%;    }
+
+    #card-container {
+        display: block;
+        grid-template-columns: none;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+    .card { display: inline-block; white-space: normal; }
+
+    #sep-title{
+        width: 80%;
+        padding: 5px 10px;
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 1px auto;
+    }
+
+    #skill-container{   flex-wrap: wrap; justify-content: center;}
+    .skill-img {    width: 100px;  }
+    .skill-p {  white-space: normal;}
+
+}
