@@ -51,19 +51,27 @@
 
 		<main id="app" class="container">
 
+			<!--meter cada seccion en un div y darke un relative y adenreo absolute-->
+
 			<div class="container">
 				<div class="d-flex h5 text-center justify-content-center" id="sep-title">
 					Becas, Premios y Distinciones
 				</div>
 			</div>
 
-			<div class="rounded-lg m-3" id="card-container">
-				<project-card
-					v-for="(p, index) in firstCards"
-					:title="p.title"
-					:desc="p.desc"
-					:link="p.link"
-				></project-card>
+			<div class="flag-container">
+				<span class="slice"><span class="flag-l"></span></span>
+
+				<div class="rounded-lg m-3" id="card-container">	
+					<project-card
+						v-for="(p, index) in firstCards"
+						:title="p.title"
+						:desc="p.desc"
+						:link="p.link"
+					></project-card>
+				</div>
+
+				<span class="slice"><span class="flag-r"></span></span>
 			</div>
 
 			<div class="container">
@@ -72,13 +80,19 @@
 				</div>
 			</div>
 
-			<div class="rounded-lg m-3" id="card-container">
-				<project-card
-					v-for="(p, index) in secondCards"
-					:title="p.title"
-					:desc="p.desc"
-					:link="p.link"
-				></project-card>
+			<div class="flag-container">
+				<span class="slice"><span class="flag-l"></span></span>
+
+				<div class="rounded-lg m-3" id="card-container">	
+					<project-card
+						v-for="(p, index) in secondCards"
+						:title="p.title"
+						:desc="p.desc"
+						:link="p.link"
+					></project-card>
+				</div>
+
+				<span class="slice"><span class="flag-r"></span></span>
 			</div>
 
 			<div class="container">
@@ -103,7 +117,7 @@
 				</div>
 			</div>
 
-			<div class="pizarra p-2 m-3" id="skill-container">
+			<div class="p-2 m-3" id="skill-container">
 				<div class="skill-card" id="">
 					<img src="media/english.png" class="skill-img"/>
 					<p class="skill-p">Idioma Ingles</p>
@@ -130,6 +144,9 @@
 
 		<div class="container py-2" id="social-media">
 
+			<a href="#" target="_blank">
+				<i class="m-4 fab fa-linkedin fa-2x" style="color: #e3e4e5"></i>
+			</a>
 			<a href="#" target="_blank">
 				<i class="m-4 fab fa-facebook fa-2x" style="color: #e3e4e5"></i>
 			</a>

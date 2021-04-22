@@ -20,8 +20,8 @@ Vue.component('exp-note',{
     template: `
         <li>
             <a href="" class="note-link">
-                <h2>{{title}}</h2>
-                <p>{{desc}}</p>
+                <h2 class="aux">{{title}}</h2>
+                <p class="aux">{{desc}}</p>
             </a>
         </li>
     `,
@@ -105,10 +105,17 @@ const app = new Vue({
     }
 });
 
-
 document.body.addEventListener("click", function(e) {
-	
-	if(e.target) {
+
+    //e.preventDefault();
+    var eventName = String((e.target).className);
+
+    if( eventName == 'note-link' || eventName == 'aux') {
         e.preventDefault();
-	}
+        //console.log('good');
+    }/*
+    else{
+        console.log(eventName);
+    }*/
+
 });

@@ -13,6 +13,7 @@
     --blanco: #f8f9fa;
     --negro: #343a40;
     --plateado: #e3e4e5;
+    --rojo: #f04e4e;
 }
   
 ::-webkit-scrollbar {
@@ -45,6 +46,10 @@ body {
     line-height: 1.5;
     border-radius: .25rem;
     margin: 1px auto;
+}
+
+.slice, .flag-l, .flag-r{
+    display: none;
 }
 
 .navbar-brand{
@@ -81,11 +86,19 @@ body {
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 20px 10px ;
-    margin: auto;
+    margin: auto !important;
 }
 
 .card, .card-body{
     height: auto;
+}
+
+#skill-container{
+    
+    display:flex;
+    justify-content: center;
+    position: relative;
+    padding: 2px;
 }
 
 .skill-card{
@@ -126,14 +139,51 @@ body {
     .avatar-img {   width: 30%;    }
     #description{   width: 80%;    }
 
+    .flag-container{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .slice{ /*esto queda abajo*/
+        
+        display: flex;
+        width: 25px !important;
+        height: 100%;
+        margin: auto;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .flag-l{
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-right: 13px solid var(--plateado);
+        border-top: 80px solid transparent;
+        border-bottom: 80px solid transparent;
+        margin: auto;
+    }
+
+    .flag-r{
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-left: 13px solid var(--plateado);
+        border-top: 80px solid transparent;
+        border-bottom: 80px solid transparent;
+        margin: auto;
+    }
+
     #card-container {
         display: block;
         grid-template-columns: none;
         overflow-x: scroll;
         white-space: nowrap;
+        width: 80%;
+        padding: 20px 4px ;
     }
 
-    .card { display: inline-block; white-space: normal; }
+    .card { display: inline-block; white-space: normal; width: 100% !important;    }
 
     #sep-title{
         width: 80%;
