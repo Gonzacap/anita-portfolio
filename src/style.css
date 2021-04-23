@@ -48,7 +48,7 @@ body {
     margin: 1px auto;
 }
 
-.slice, .flag-l, .flag-r{
+.slice, .arrow-l, .arrow-r{
     display: none;
 }
 
@@ -80,7 +80,7 @@ body {
     border-radius: 15px;
 }
 
-#card-container {
+.card-container {
 
     display: grid;
     justify-content: center;
@@ -129,7 +129,7 @@ body {
 @media (min-width:  576px) and (max-width:992px) {
   
     .avatar-img {   width: 30%;    }
-    #card-container{  grid-template-columns: 1fr 1fr }
+    .card-container{  grid-template-columns: 1fr 1fr }
   
 }
 
@@ -139,7 +139,7 @@ body {
     .avatar-img {   width: 30%;    }
     #description{   width: 80%;    }
 
-    .flag-container{
+    .arrow-container{
         display: flex;
         flex-wrap: nowrap;
     }
@@ -154,27 +154,27 @@ body {
         align-content: center;
     }
 
-    .flag-l{
+    .arrow-l{
         display: inline-block;
         width: 0;
         height: 0;
-        border-right: 13px solid var(--plateado);
-        border-top: 80px solid transparent;
-        border-bottom: 80px solid transparent;
+        border-right: 8px solid var(--plateado);
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid transparent;
         margin: auto;
     }
 
-    .flag-r{
+    .arrow-r{
         display: inline-block;
         width: 0;
         height: 0;
-        border-left: 13px solid var(--plateado);
-        border-top: 80px solid transparent;
-        border-bottom: 80px solid transparent;
+        border-left: 8px solid var(--plateado);
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid transparent;
         margin: auto;
     }
 
-    #card-container {
+    .card-container {
         display: block;
         grid-template-columns: none;
         overflow-x: scroll;

@@ -119,3 +119,20 @@ document.body.addEventListener("click", function(e) {
     }*/
 
 });
+
+document.body.addEventListener("keydown", function(e) {
+    console.log("name: "+e);
+});
+
+function rightSlice1(){
+
+    /*console.log(document.body.scrollLeft);
+    document.body.scrollLeft=10;
+    //console.log(document.body.scrollLeft());*/
+
+    //var elmnt = document.getElementById("card-container-1");
+    /*console.log(document.body.scrollLeft);
+    document.body.scrollLeft+=30;
+    console.log(document.body.scrollLeft);*/
+}
+

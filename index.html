@@ -59,10 +59,10 @@
 				</div>
 			</div>
 
-			<div class="flag-container">
-				<span class="slice"><span class="flag-l"></span></span>
+			<div class="arrow-container">
+				<span class="slice"><span class="arrow-l"></span></span>
 
-				<div class="rounded-lg m-3" id="card-container">	
+				<div class="rounded-lg m-3 card-container" id="card-content-2">	
 					<project-card
 						v-for="(p, index) in firstCards"
 						:title="p.title"
@@ -71,7 +71,7 @@
 					></project-card>
 				</div>
 
-				<span class="slice"><span class="flag-r"></span></span>
+				<span class="slice" onClick="rightSlice1()"><span class="arrow-r"></span></span>
 			</div>
 
 			<div class="container">
@@ -80,10 +80,10 @@
 				</div>
 			</div>
 
-			<div class="flag-container">
-				<span class="slice"><span class="flag-l"></span></span>
+			<div class="arrow-container">
+				<span class="slice"><span class="arrow-l"></span></span>
 
-				<div class="rounded-lg m-3" id="card-container">	
+				<div class="rounded-lg m-3 card-container" id="card-content-1">	
 					<project-card
 						v-for="(p, index) in secondCards"
 						:title="p.title"
@@ -92,7 +92,7 @@
 					></project-card>
 				</div>
 
-				<span class="slice"><span class="flag-r"></span></span>
+				<span class="slice" onClick="rightSlice2()"><span class="arrow-r"></span></span>
 			</div>
 
 			<div class="container">
