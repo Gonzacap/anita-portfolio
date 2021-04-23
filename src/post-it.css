@@ -82,21 +82,42 @@ ul li a:hover,ul li a:focus{
     grid-template-columns: none;
     overflow-x: scroll;
     white-space: nowrap;
-    width: 90%;
+    width: 100%;
     /*padding: 20px 4px ;*/
+    position: relative;
   }
 
   li{
     /*position: absolute;
     grid-area: pizarra;*/
     display: inline-block; 
-    white-space: normal; 
+    white-space: normal;
+    -o-transform:rotate(-4deg);
+    -webkit-transform:rotate(-4deg);
+    -moz-transform:rotate(-4deg); 
     width: auto;
-    margin: 2em -35px;    
+    margin: 2em -30% 2em 10px;
+    position: static;    
   }
 
-  ul li a{
-    
+  ul li:nth-child(even) a{
+    position:relative;
+    /*top:5px;*/
+    background:#cfc;
+  }
+  ul li:nth-child(3n) a{
+    position:relative;
+    /*top:-5px;*/
+    background:#ccf;
   }
 
+  ul li:hover, ul li:focus{
+
+    -o-transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    /*position: absolute;*/
+    /*z-index: 20;*/
+    margin: 2em 15%;
+  }
 }
