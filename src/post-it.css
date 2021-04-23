@@ -10,7 +10,7 @@ ul,li{
   list-style:none;
 }
 ul{
-  display: flex !important;
+  display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   overflow:hidden;
@@ -73,11 +73,30 @@ ul li a:hover,ul li a:focus{
 @media (max-width: 575px)/* and (max-width:992px) */{ /*celulares*/
 
   ul{
-    position: relative;
+    /*display: grid;
+    grid-template-areas: 'pizarra';
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    justify-items: center;*/
+    display: block;
+    grid-template-columns: none;
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: 90%;
+    /*padding: 20px 4px ;*/
   }
 
   li{
-    position: absolute;
+    /*position: absolute;
+    grid-area: pizarra;*/
+    display: inline-block; 
+    white-space: normal; 
+    width: auto;
+    margin: 2em -35px;    
+  }
+
+  ul li a{
+    
   }
 
 }
