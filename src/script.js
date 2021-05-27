@@ -32,75 +32,55 @@ const app = new Vue({
     data:{
         firstCards:[
             {
-                title : 'asd', 
-                //ico : "fab fa-java fa-8x",
-                desc : '"Yo habito, tu habitas, el/ella ocupa: la visibilización de la situación del acceso a la tierra y la vivienda en América Latina" en el Boletín N°11 GJI-IRI p. 65',
-                link : "src/routes/r1.html"
+                title : 'Title', 
+                desc : 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, unde.',
+                link : "#"
             },
             {
-                title : 'Nota en UCActualidad N°166 - p. 23', 
-                //ico : "fab fa-java fa-8x",
-                desc : "asd",
+                title : 'Title', 
+                desc : 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, unde.',
                 link : "src/routes/r2.html"
             },
             {
-                title : 'Nota a ALAS EJ - FIQ UNL', 
-                //ico : "fab fa-java fa-8x",
-                desc : "asd",
-                link : "http://www.fiq.unl.edu.ar/noticia/47608/alas_una_empresa_junior_que_ayuda_a_incorporar_herramientas_de_ingenier%C3%ADa_a_pymes.html"
-            },
-            {
-                title : '"Populismo à la carte" en Revista Civitas VOL VIII', 
-                //ico : "fab fa-java fa-8x",
-                desc : "asd",
-                link : "src/routes/r3.html"
-            },
-            {
-                title : 'Presentación en las V Jornadas de Estrategia y Seguridad Internacional', 
-                //ico : "fab fa-java fa-8x",
-                desc : "asd",
-                link : "https://drive.google.com/file/d/1DGI-uCM3YZwKGoavQdxQYZEpvnxgNQsh/view"
-            },
-            {
-                title : '', 
-                //ico : "fab fa-java fa-8x",
-                desc : "ad",
-                link : "#"
-            },
-        ],
-        secondCards:[
-            {
-                title : '', 
-                //ico : "fab fa-java fa-8x",
-                desc : "ad",
-                link : "#"
-            },
-            {
-                title : '', 
-                //ico : "fab fa-java fa-8x",
-                desc : "ad",
-                link : "#"
-            },
-            {
-                title : '', 
-                //ico : "fab fa-java fa-8x",
-                desc : "ad",
+                title : 'Title',
+                desc : 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, unde.',
                 link : "#"
             },
             /*{
-                title : '', 
-                //ico : "fab fa-java fa-8x",
-                desc : "ad",
+                title : 'Title', 
+                desc : 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, unde.',
+                link : "#"
+            },*/
+        ],
+        secondCards:[
+            {
+                title : 'Title', 
+                desc : 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, unde.',
+                link : "#"
+            },
+            {
+                title : 'Title', 
+                desc : 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, unde.',
+                link : "#"
+            },
+            {
+                title : 'Title',
+                desc : 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, unde.',
+                link : "#"
+            },
+            /*{
+                title : 'Title', 
+                desc : 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, unde.',
                 link : "#"
             },*/
         ],
         exp: [
-            {title: 'Title #1', desc: 'Text Content #1'},
-            {title: 'Title #2', desc: 'Text Content #2'},
-            {title: 'Title #3', desc: 'Text Content #3'},
-            {title: 'Title #4', desc: 'Text Content #4'},
-            /*{title: 'Title #5', desc: 'Text Content #5'},
-            {title: 'Title #6', desc: 'Text Content #6'},*/
+            {title: 'Title #1', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, nisi.'},
+            {title: 'Title #2', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, nisi.'},
+            {title: 'Title #3', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, nisi.'},
+            {title: 'Title #4', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, nisi.'},
+            /*{title: 'Title #5', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, nisi.'},
+            {title: 'Title #6', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, nisi.'},*/
         ]
     }
 });
@@ -113,26 +93,15 @@ document.body.addEventListener("click", function(e) {
     if( eventName == 'note-link' || eventName == 'aux') {
         e.preventDefault();
         //console.log('good');
-    }/*
+    }
     else{
         console.log(eventName);
-    }*/
+    }
 
 });
 
 document.body.addEventListener("keydown", function(e) {
-    console.log("name: "+e);
+
+    var eventName = String((e.target).className);
+    console.log(eventName);
 });
-
-function rightSlice1(){
-
-    /*console.log(document.body.scrollLeft);
-    document.body.scrollLeft=10;
-    //console.log(document.body.scrollLeft());*/
-
-    //var elmnt = document.getElementById("card-container-1");
-    /*console.log(document.body.scrollLeft);
-    document.body.scrollLeft+=30;
-    console.log(document.body.scrollLeft);*/
-}
-
